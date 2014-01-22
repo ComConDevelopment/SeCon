@@ -1,0 +1,15 @@
+﻿<Window x:Class="SeCon.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SeCon.UserControls"
+        Title="MainWindow" Height="500" Width="800">
+    <TabControl Margin="50,80,50,50">
+        <TabItem Header="Suche">
+            <local:SearchResultControl></local:SearchResultControl>
+        </TabItem>
+        <TabItem Header="Home">
+            <Grid Background="#FFE5E5E5"/>
+        </TabItem>
+    </TabControl>
+
+</Window>
