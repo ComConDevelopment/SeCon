@@ -38,7 +38,7 @@
       <HintPath>..\..\..\..\GitHub\ComCon\P42_Tom\P42\P42\bin\Debug\Microsoft.Practices.Prism.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\..\..\GitHub\ComCon\P42_Tom\P42\P42\bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\ComCon\P42\P42\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
