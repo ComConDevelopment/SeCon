@@ -28,7 +28,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <Button Grid.Row="1" Grid.Column="1" Height="25" Content="Suchen" Command="{Binding SearchCommand, UpdateSourceTrigger=PropertyChanged}"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Height="63" Content="Suchen" Command="{Binding SearchCommand, UpdateSourceTrigger=PropertyChanged}"></Button>
 
     </Grid>
 </UserControl>
