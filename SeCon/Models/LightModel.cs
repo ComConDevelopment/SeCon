@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Practices.Prism.Commands;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,15 +9,29 @@ namespace SeCon.Models
 {
     public class LightModel : ViewModelBase
     {
+
         #region Deklaration
 
         #endregion
 
         #region Properties
 
+        public DelegateCommand LBedroom { get; set; }
+        public DelegateCommand LKitchen { get; set; }
+        public DelegateCommand LLivingRoom { get; set; }
+
+
+
         #endregion
 
         #region Konstruktor
+
+        public LightModel()
+        {
+            LBedroom = new DelegateCommand(LBedroomSwitch);
+            LKitchen = new DelegateCommand(LKitchenSwitch);
+            LLivingRoom = new DelegateCommand(LLivingRoomSwitch);
+        }
 
         #endregion
 
@@ -25,6 +40,21 @@ namespace SeCon.Models
         #endregion
 
         #region Diverses
+
+        private void LBedroomSwitch()
+        {
+
+        }
+
+        private void LKitchenSwitch()
+        {
+
+        }
+
+        private void LLivingRoomSwitch()
+        {
+
+        }
 
         #endregion
 

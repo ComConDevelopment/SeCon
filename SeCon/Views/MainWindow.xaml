@@ -8,9 +8,7 @@
             <local:SearchResultControl></local:SearchResultControl>
         </TabItem>
         <TabItem Header="Home">
-            <Grid Background="#FFE5E5E5">
-                <local:LightControl Width="100" Height="100"></local:LightControl>
-            </Grid>
+            <Grid Background="#FFE5E5E5"/>
         </TabItem>
     </TabControl>
 
