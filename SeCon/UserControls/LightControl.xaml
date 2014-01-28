@@ -4,13 +4,53 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="500">
-    <Grid>
-        <Button HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="59" Margin="84,49,0,0"/>
-        <Button HorizontalAlignment="Left" Height="49" VerticalAlignment="Top" Width="56" Margin="302,80,0,0"/>
-        <Button HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="53" Margin="238,239,0,0"/>
+             d:DesignHeight="300" d:DesignWidth="300">
 
-    </Grid>
+
+    <!--<Grid>
+    
+         <Button HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="59" Margin="84,49,0,0"/>
+         <Button HorizontalAlignment="Left" Height="49" VerticalAlignment="Top" Width="56" Margin="302,80,0,0"/>
+         <Button HorizontalAlignment="Left" Height="51" VerticalAlignment="Top" Width="53" Margin="238,239,0,0"/>
+ 
+    </Grid>-->
+      
+
+    <Button>
+        
+        <Button.Style>           
+            <Style TargetType="Button">                 
+                <Setter Property="Template">                     
+                    <Setter.Value>                         
+                        <ControlTemplate TargetType="Button">                             
+                            <Border Background="Black" x:Name="Root" CornerRadius="200">                                 
+                                <VisualStateManager.VisualStateGroups>                                     
+                                    <VisualStateGroup x:Name="CommonStates">                                         
+                                        <VisualState x:Name="Normal"></VisualState>                                         
+                                        <VisualState x:Name="Pressed">                                             
+                                            <Storyboard>                                                 
+                                                <DoubleAnimation Storyboard.TargetName="Switch" Storyboard.TargetProperty="(Border.LayoutTransform).(ScaleX)" From="1" To="0.7" Duration="0:0:0"></DoubleAnimation>                                                 
+                                                <DoubleAnimation Storyboard.TargetName="Switch" Storyboard.TargetProperty="(Border.LayoutTransform).(ScaleY)" From="1" To="0.7" Duration="0:0:0"></DoubleAnimation>                                                 
+                                            </Storyboard>                                             
+                                        </VisualState>                                         
+                                    </VisualStateGroup>                                     
+                                </VisualStateManager.VisualStateGroups>
+                                <Border Background="Gray" BorderBrush="DarkGray" Margin="5" x:Name="Switch" CornerRadius="200">                                     
+                                    <Border.LayoutTransform>                                         
+                                        <ScaleTransform CenterX="0.5" CenterY="0.5" ></ScaleTransform>                                         
+                                    </Border.LayoutTransform>                                     
+                                    <ContentPresenter Content="{TemplateBinding Content}"></ContentPresenter>                                     
+                                </Border> 
+                            </Border>                             
+                        </ControlTemplate>                         
+                    </Setter.Value>                     
+                </Setter>                 
+            </Style>             
+        </Button.Style>         
+    </Button>
+    
+    
+
 
 
 </UserControl>
