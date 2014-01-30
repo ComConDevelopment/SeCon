@@ -5,28 +5,31 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d">
              
-    
+   
     <UserControl.Resources>
         <XmlDataProvider x:Key="DataRSS" XPath="//item" Source="http://www.n-tv.de/rss?format=xml"></XmlDataProvider>    
     </UserControl.Resources>
-    
-    <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
-        <Grid>            
-        <ListBox Name="LB1" ItemsSource="{Binding Source={StaticResource DataRSS}}">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">                    
-                        <TextBlock Text="{Binding XPath=title}" FontWeight="Bold"></TextBlock>                            
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
-        <StackPanel Orientation="Vertical" DataContext="{Binding ElementName=LB1,Path=SelectedItem}"></StackPanel>
-        <TextBlock Text="{Binding XPath=pubDate}"></TextBlock>
-        <TextBlock Text="{Binding XPath=description}"></TextBlock>
-        <TextBlock>
-            <Hyperlink Name="GoToLink" Tag="{Binding XPath=link,Path=InnerText}" Click="GoToLink_Click"></Hyperlink>
-        </TextBlock>
-        </Grid>
-    </ScrollViewer>
+    <Grid>    
+        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+            <ListBox Name="LB1" ItemsSource="{Binding Source={StaticResource DataRSS}}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Margin="0,40,0,0">                    
+                            <TextBlock Text="{Binding XPath=title}" FontWeight="Bold"></TextBlock>                            
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </ScrollViewer>
+        <StackPanel Orientation="Vertical" DataContext="{Binding ElementName=LB1,Path=SelectedItem}" VerticalAlignment="Bottom">
+            <TextBlock Text="{Binding XPath=pubDate}"></TextBlock>
+            <TextBlock Text="{Binding XPath=description}"></TextBlock>
+            <TextBlock>
+                <Hyperlink Name="GoToLink" Tag="{Binding XPath=link,Path=InnerText}" Click="GoToLink_Click">
+                                   
+                </Hyperlink>                       
+            </TextBlock>
+        </StackPanel>
+       
+    </Grid>
 </UserControl>

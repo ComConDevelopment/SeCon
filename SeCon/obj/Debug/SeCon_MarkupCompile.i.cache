@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\App.xaml
-6-841730878
+7-208454248
 
-17-1226302830
+181218368687
 17-838618521
-UserControls\ApplicationControl.xaml;UserControls\LightControl.xaml;UserControls\RSSControl.xaml;UserControls\SearchResultControl.xaml;UserControls\SearchTextBox.xaml;Views\MainWindow.xaml;
+UserControls\ApplicationControl.xaml;UserControls\FS20Control.xaml;UserControls\ControlButton.xaml;UserControls\RSSControl.xaml;UserControls\SearchResultControl.xaml;UserControls\SearchTextBox.xaml;Views\MainWindow.xaml;
 
-False
+True
 

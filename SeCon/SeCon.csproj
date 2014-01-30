@@ -74,8 +74,11 @@
     <Compile Include="UserControls\ApplicationControl.xaml.cs">
       <DependentUpon>ApplicationControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LightControl.xaml.cs">
-      <DependentUpon>LightControl.xaml</DependentUpon>
+    <Compile Include="UserControls\FS20Control.xaml.cs">
+      <DependentUpon>FS20Control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ControlButton.xaml.cs">
+      <DependentUpon>ControlButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RSSControl.xaml.cs">
       <DependentUpon>RSSControl.xaml</DependentUpon>
@@ -123,7 +126,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\LightControl.xaml">
+    <Page Include="UserControls\FS20Control.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ControlButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

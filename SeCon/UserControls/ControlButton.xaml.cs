@@ -12,24 +12,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.ComponentModel;
 
 namespace SeCon.UserControls
 {
     /// <summary>
-    /// Interaktionslogik für ApplicationControl.xaml
+    /// Interaktionslogik für LightControl.xaml
     /// </summary>
-    public partial class ApplicationControl : UserControl
+    public partial class ControlButton : UserControl
     {
-        public ApplicationControl()
+        public ControlButton()
         {
             InitializeComponent();
-             
         }
-
-        private void beenden_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
+    
     }
+
+
 }

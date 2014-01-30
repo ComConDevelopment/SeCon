@@ -25,9 +25,11 @@ c:\users\wboestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\Ge
 c:\users\wboestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\SeCon_MarkupCompile.lref
 c:\users\wboestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\SearchResultControl.baml
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\bin\Debug\UsbLibrary.dll
-C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\LightControl.baml
-C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\LightControl.g.cs
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\ApplicationControl.baml
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\ApplicationControl.g.cs
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\RSSControl.baml
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\RSSControl.g.cs
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\FS20Control.baml
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\ControlButton.baml
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\FS20Control.g.cs
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\ControlButton.g.cs
