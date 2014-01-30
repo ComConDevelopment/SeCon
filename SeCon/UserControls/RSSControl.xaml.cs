@@ -12,20 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace SeCon.UserControls
 {
     /// <summary>
-    /// Interaktionslogik für LightControl.xaml
+    /// Interaktionslogik für RSSControl.xaml
     /// </summary>
-    public partial class LightControl : UserControl
+    public partial class RSSControl : UserControl
     {
-        public LightControl()
+        public RSSControl()
         {
             InitializeComponent();
         }
-    
-    }
 
+        private void GoToLink_Click(object sender, RoutedEventArgs e)
+        {
+            string path = (sender as Hyperlink).Tag as string;
+            Process.Start(path);
+        }
+
+        
+            
+    }
 
 }

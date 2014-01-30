@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:SeCon.UserControls"
         Title="MainWindow" Height="500" Width="800">
+    
     <TabControl Margin="50,80,50,50" SelectedIndex="2">
         <TabItem Header="SUCHE">
             <local:SearchResultControl></local:SearchResultControl>
@@ -11,14 +12,17 @@
             <Grid Background="#FFE5E5E5"/>
         </TabItem>
         <TabItem Header="HOME">
-            <Grid Background="#FFE5E5E5"/>
+            <local:RSSControl HorizontalAlignment="Left"></local:RSSControl>
         </TabItem>
         <TabItem Header="XBMC">
             <Grid Background="#FFE5E5E5"/>
         </TabItem>
         <TabItem Header="LICHT">
-            <local:LightControl Height="100" Width="100"></local:LightControl>
+            <local:LightControl Height="50" Width="50"></local:LightControl>
         </TabItem>
     </TabControl>
+    
+    
+    
 
 </Window>

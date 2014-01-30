@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
 
@@ -25,20 +26,22 @@
                         <ControlTemplate TargetType="Button">                             
                             <Border Background="Black" x:Name="Root" CornerRadius="200">                                 
                                 <VisualStateManager.VisualStateGroups>                                     
-                                    <VisualStateGroup x:Name="CommonStates">                                         
-                                        <VisualState x:Name="Normal"></VisualState>                                         
-                                        <VisualState x:Name="Pressed">                                             
+                                    <VisualStateGroup x:Name="CommonStates">         
+                                        <VisualState x:Name="Normal" />                                        
+                                        <VisualState x:Name="MouseOver">                                             
                                             <Storyboard>                                                 
-                                                <DoubleAnimation Storyboard.TargetName="Switch" Storyboard.TargetProperty="(Border.LayoutTransform).(ScaleX)" From="1" To="0.7" Duration="0:0:0"></DoubleAnimation>                                                 
-                                                <DoubleAnimation Storyboard.TargetName="Switch" Storyboard.TargetProperty="(Border.LayoutTransform).(ScaleY)" From="1" To="0.7" Duration="0:0:0"></DoubleAnimation>                                                 
+                                                <ThicknessAnimation Storyboard.TargetName="Switch" Storyboard.TargetProperty="Margin" To="5" SpeedRatio="3.5"></ThicknessAnimation>
+                                                <ThicknessAnimation Storyboard.TargetName="Switch" Storyboard.TargetProperty="Margin" To="0" SpeedRatio="1.5"></ThicknessAnimation>
                                             </Storyboard>                                             
-                                        </VisualState>                                         
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard SpeedRatio="3">
+                                                <ThicknessAnimation Storyboard.TargetName="Switch" Storyboard.TargetProperty="Margin" To="0" ></ThicknessAnimation>
+                                            </Storyboard>
+                                        </VisualState>
                                     </VisualStateGroup>                                     
                                 </VisualStateManager.VisualStateGroups>
-                                <Border Background="Gray" BorderBrush="DarkGray" Margin="5" x:Name="Switch" CornerRadius="200">                                     
-                                    <Border.LayoutTransform>                                         
-                                        <ScaleTransform CenterX="0.5" CenterY="0.5" ></ScaleTransform>                                         
-                                    </Border.LayoutTransform>                                     
+                                <Border Background="Gray" x:Name="Switch" CornerRadius="200" Margin="25">                                    
                                     <ContentPresenter Content="{TemplateBinding Content}"></ContentPresenter>                                     
                                 </Border> 
                             </Border>                             

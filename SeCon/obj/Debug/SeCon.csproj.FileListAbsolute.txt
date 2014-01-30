@@ -27,3 +27,7 @@ c:\users\wboestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\Us
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\bin\Debug\UsbLibrary.dll
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\LightControl.baml
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\LightControl.g.cs
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\ApplicationControl.baml
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\ApplicationControl.g.cs
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\RSSControl.baml
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\RSSControl.g.cs

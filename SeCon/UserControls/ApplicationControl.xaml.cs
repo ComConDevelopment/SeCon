@@ -16,16 +16,13 @@ using System.Windows.Shapes;
 namespace SeCon.UserControls
 {
     /// <summary>
-    /// Interaktionslogik für LightControl.xaml
+    /// Interaktionslogik für ApplicationControl.xaml
     /// </summary>
-    public partial class LightControl : UserControl
+    public partial class ApplicationControl : UserControl
     {
-        public LightControl()
+        public ApplicationControl()
         {
             InitializeComponent();
         }
-    
     }
-
-
 }
