@@ -2,9 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:SeCon.UserControls"
-        Title="MainWindow" Height="500" Width="800" ResizeMode="NoResize" WindowState="Maximized" WindowStyle="None">
+        Title="MainWindow" ResizeMode="NoResize" WindowState="Maximized" WindowStyle="None">
+    
     <Grid>
-        <local:ApplicationControl HorizontalAlignment="Right" VerticalAlignment="Top" Height="30" Margin="0,10,10,0"></local:ApplicationControl>
+        <local:ApplicationControl HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,0"></local:ApplicationControl>
     <TabControl Margin="100,120,100,150" SelectedIndex="2">
         <TabItem Header="SEARCH" >
             <local:SearchResultControl></local:SearchResultControl>
@@ -15,8 +16,25 @@
                 </Grid>
             </TabItem>
         <TabItem Header="HOME">
-            <local:RSSControl HorizontalAlignment="Left"></local:RSSControl>
-        </TabItem>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        
+                    </Grid.RowDefinitions>
+
+                    <local:RSSControl x:Name="newsrss" Grid.Column="0" ></local:RSSControl>
+                    <local:TVRSSControl x:Name="tvrss" Grid.Column="1"></local:TVRSSControl>
+                    <local:WeatherControl Grid.Column="2" ></local:WeatherControl>                 
+
+
+                </Grid>
+
+            </TabItem>
         <TabItem Header="XBMC">
                 <Grid Background="#FFE5E5E5">
                     <TextBlock Text="In Development" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>

@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SeCon.Views
+namespace SeCon.UserControls
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für WeatherControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WeatherControl : UserControl
     {
-        public MainWindow()
+        public WeatherControl()
         {
             InitializeComponent();
-        }
-
-        private void RSSControl_SourceUpdated(object sender, DataTransferEventArgs e)
-        {
-
         }
     }
 }

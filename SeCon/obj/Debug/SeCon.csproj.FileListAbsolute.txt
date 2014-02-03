@@ -33,3 +33,7 @@ C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\Us
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\ControlButton.baml
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\FS20Control.g.cs
 C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\ControlButton.g.cs
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\TVRSSControl.baml
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\TVRSSControl.g.cs
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\WeatherControl.baml
+C:\Users\WBoestro\documents\visual studio 2012\Projects\SeCon\SeCon\obj\Debug\UserControls\WeatherControl.g.cs

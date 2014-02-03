@@ -6,34 +6,33 @@
              mc:Ignorable="d">
     
     <Grid>
-        <Border Background="Black" x:Name="ifPressed" Opacity="0">
-            <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal" />
-                    <VisualState x:Name="MouseOver">
-                        <Storyboard SpeedRatio="3">
-                            <DoubleAnimation Storyboard.TargetName="ifPressed" Storyboard.TargetProperty="Opacity" To="0.5" ></DoubleAnimation>
-                        </Storyboard>
-                    </VisualState>
-                </VisualStateGroup>
-            </VisualStateManager.VisualStateGroups>
-        </Border>
         <Button Name="beenden" Click="beenden_Click">
-        <Button.Style>
-            <Style TargetType="Button">
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="Button">
-                            <TextBlock Text="Beenden" Name="Beenden" FontSize="18">
-                                
-                            </TextBlock>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-        </Button.Style>
-    </Button>
-       
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Name="Buttonborder" Height="40" Width="90" VerticalAlignment="Center">
+                                    <Border.Style>
+                                        <Style>
+                                            <Setter Property="Border.Background" Value="Transparent"/>                                            
+                                            <Style.Triggers>
+                                                <Trigger Property="Border.IsMouseOver" Value="True">
+                                                    <Setter Property="Border.Background" Value="#FFE82020"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
+                                    <TextBlock Text="Beenden" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        
+        
+        </Button>
     </Grid>
 
 </UserControl>

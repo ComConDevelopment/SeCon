@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="SeCon.UserControls.RSSControl"
+﻿<UserControl x:Class="SeCon.UserControls.TVRSSControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,7 +7,7 @@
              
    
     <UserControl.Resources>
-        <XmlDataProvider x:Key="DataRSS" XPath="//item" Source="http://www.n-tv.de/rss?format=xml"></XmlDataProvider>    
+        <XmlDataProvider x:Key="DataRSS" XPath="//item" Source="http://www.tvspielfilm.de/tv-programm/rss/jetzt.xml"></XmlDataProvider>    
     </UserControl.Resources>
     <Grid>    
         <ScrollViewer VerticalScrollBarVisibility="Hidden">

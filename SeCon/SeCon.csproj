@@ -80,6 +80,9 @@
     <Compile Include="UserControls\ControlButton.xaml.cs">
       <DependentUpon>ControlButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\TVRSSControl.xaml.cs">
+      <DependentUpon>TVRSSControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\RSSControl.xaml.cs">
       <DependentUpon>RSSControl.xaml</DependentUpon>
     </Compile>
@@ -88,6 +91,9 @@
     </Compile>
     <Compile Include="UserControls\SearchTextBox.xaml.cs">
       <DependentUpon>SearchTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WeatherControl.xaml.cs">
+      <DependentUpon>WeatherControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -134,6 +140,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\TVRSSControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="UserControls\RSSControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,6 +153,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserControls\SearchTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\WeatherControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
